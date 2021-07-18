@@ -3,7 +3,7 @@ const appendChild = (parent, child) => {
 
   if (
     // Covers cases where child is HTMLCollection or NodeList
-    typeof child !== 'string' &&
+    typeof child !== "string" &&
     child[Symbol.iterator] &&
     !(child instanceof Node) // <form /> has [Symbol.iterator]
   ) {
@@ -12,12 +12,12 @@ const appendChild = (parent, child) => {
   }
 
   parent.appendChild(
-    typeof child === 'string' ? document.createTextNode(child) : child,
+    child instanceof Node ? child : document.createTextNode(child)
   );
 };
 
 export const jsx = (tag, { children, ...props }, _unknown) => {
-  if (typeof tag === 'function') return tag({ children, ...props }, _unknown);
+  if (typeof tag === "function") return tag({ children, ...props }, _unknown);
 
   const element = document.createElement(tag);
 
