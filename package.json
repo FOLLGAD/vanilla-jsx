@@ -1,8 +1,12 @@
 {
   "name": "jsx2js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "scripts": {},
   "author": "Emil Ahlbäck <ahlback.emil@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/follgad/vanilla-jsx"
+  },
   "license": "ISC"
 }

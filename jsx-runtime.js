@@ -2,8 +2,7 @@ const appendChild = (parent, child) => {
   if (!child) return; // null, undefined, false, "" etc should not create nodes
 
   if (
-    // Covers cases where child is HTMLCollection
-    // or NodeList
+    // Covers cases where child is HTMLCollection or NodeList
     typeof child !== 'string' &&
     child[Symbol.iterator] &&
     !(child instanceof Node) // <form /> has [Symbol.iterator]
