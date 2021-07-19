@@ -1,7 +1,14 @@
 {
   "name": "jsx2js",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "JSX runtime to convert JSX to direct calls to the DOM",
+  "keywords": [
+    "front-end",
+    "jsx",
+    "react"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {},
   "author": "Emil Ahlbäck <ahlback.emil@gmail.com>",
   "repository": {

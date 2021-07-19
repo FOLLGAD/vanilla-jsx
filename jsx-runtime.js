@@ -16,7 +16,7 @@ const appendChild = (parent, child) => {
   );
 };
 
-export const jsx = (tag, { children, ...props }, _unknown) => {
+export const jsx = (tag, { children, ref, ...props }, _unknown) => {
   if (typeof tag === "function") return tag({ children, ...props }, _unknown);
 
   const element = document.createElement(tag);
@@ -26,6 +26,12 @@ export const jsx = (tag, { children, ...props }, _unknown) => {
   // const element = isSvg
   //   ? document.createElementNS('http://www.w3.org/2000/svg', tag)
   //   : document.createElement(tag);
+
+  if (typeof ref === "function") {
+    ref(element);
+  } else if (ref) {
+    element.setAttribute("ref", ref);
+  }
 
   for (const key in props) {
     element.setAttribute(key, props[key]);
