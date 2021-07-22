@@ -72,5 +72,5 @@ document.body.append(
 )
 ```
 
-Demo here: https://codesandbox.io/s/nostalgic-architecture-kv47z
+Demo here: https://codesandbox.io/s/nostalgic-architecture-kv47z?file=/src/index.jsx
 
