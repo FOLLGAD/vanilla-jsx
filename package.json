@@ -1,6 +1,6 @@
 {
   "name": "jsx2js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "JSX runtime to convert JSX to direct calls to the DOM",
   "keywords": [
     "front-end",
