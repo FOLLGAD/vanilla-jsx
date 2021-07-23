@@ -1,4 +1,6 @@
-# JSX to JS
+# JSX to JS — Use JSX without react
+
+[https://mikofilas.netlify.app/blog/jsx-without-react](https://mikofilas.netlify.app/blog/jsx-without-react)
 
 ## Installation and setup
 
